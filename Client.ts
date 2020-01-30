@@ -178,15 +178,15 @@ export class Client {
           ? message.icon
           : (message.aid === 1 ? 'pushover.png' : 'default.png');
 
-        const imageFile = await this.fetchImage(icon);
+        //const imageFile = await this.fetchImage(icon);
 
-        return this.notify(message, imageFile);
+        return this.notify(message, null);
       }
     });
     return this.updateHead(lastMessage);
   }
 
-  private async notify(message: IPushoverMessage, imageFile: string) {
+  private async notify(message: IPushoverMessage, imageFile: string | null) {
     this.settings.logger.log(JSON.stringify(message));
     return new Promise((resolve, reject) => {
       const options = {
