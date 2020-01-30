@@ -187,7 +187,6 @@ export class Client {
   }
 
   private async notify(message: IPushoverMessage, imageFile: string | null) {
-    this.settings.logger.log(JSON.stringify(message));
     return new Promise((resolve, reject) => {
       const options = {
         host: this.settings.gotifyHost,
