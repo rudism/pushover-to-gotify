@@ -1,0 +1,35 @@
+{
+  "name": "pushover-to-gotify",
+  "version": "1.0.0",
+  "description": "Pushover client that sends notifications to gotify",
+  "keywords": [
+    "pushover",
+    "gotify",
+    "notification",
+    "notify"
+  ],
+  "author": {
+    "name": "Rudis Muiznieks",
+    "email": "rudis@sitosis.com"
+  },
+  "repository": "git://github.com/rudism/pushover-to-gotify",
+  "bin": {
+    "pushover-to-gotify": "./bin/pushover-to-gotify"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {},
+  "devDependencies": {
+    "@types/mkdirp": "^0.5.2",
+    "@types/node": "^13.5.1",
+    "@types/ws": "^7.2.0",
+    "@types/xdg-basedir": "^4.0.2"
+  },
+  "dependencies": {
+    "mkdirp": "^1.0.3",
+    "ws": "^7.2.1",
+    "xdg-basedir": "^4.0.0"
+  }
+}

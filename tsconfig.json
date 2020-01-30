@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es6",
+    "esModuleInterop": true,
+    "types": [
+      "node"
+    ],
+    "outDir": "./dist"
+  },
+  "files": [
+    "Client.ts",
+    "index.ts"
+  ]
+}
